@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Abstract London skyline">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#071a2b"/>
+    <stop offset=".58" stop-color="#102a43"/>
+    <stop offset="1" stop-color="#27445c"/>
+  </linearGradient>
+  <linearGradient id="river" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#0b2337"/>
+    <stop offset=".5" stop-color="#31556d"/>
+    <stop offset="1" stop-color="#102a43"/>
+  </linearGradient>
+  <filter id="blur"><feGaussianBlur stdDeviation="22"/></filter>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<circle cx="1350" cy="150" r="210" fill="#c94343" opacity=".17" filter="url(#blur)"/>
+<circle cx="1070" cy="610" r="170" fill="#aa8c4d" opacity=".12" filter="url(#blur)"/>
+
+<!-- Soft London rain / editorial grain lines -->
+<g stroke="#f7f1e8" stroke-width="2" opacity=".055">
+  <path d="M1010 80l-180 510M1130 40L920 650M1260 60l-170 500M1400 20l-220 650M1510 70l-190 560"/>
+</g>
+
+<!-- London Eye -->
+<g transform="translate(1040 410)" fill="none" stroke="#e5ded2" opacity=".34">
+  <circle r="176" stroke-width="7"/>
+  <circle r="12" fill="#e5ded2" stroke="none"/>
+  <g stroke-width="3">
+    <path d="M0-176V176M-176 0H176M-124-124L124 124M124-124L-124 124"/>
+    <path d="M-66-163L66 163M66-163L-66 163M-163-66L163 66M163-66L-163 66"/>
+  </g>
+  <path d="M-50 183L-102 405M50 183L105 405" stroke-width="9"/>
+</g>
+
+<!-- St Paul's -->
+<g transform="translate(1320 425)" fill="#061624" opacity=".82">
+  <rect x="-105" y="95" width="210" height="235"/>
+  <rect x="-150" y="155" width="300" height="175"/>
+  <ellipse cx="0" cy="92" rx="84" ry="70"/>
+  <path d="M-58 80 Q0 -28 58 80Z"/>
+  <rect x="-9" y="-57" width="18" height="90"/>
+  <path d="M0-91l-20 35h40z"/>
+</g>
+
+<!-- Tower Bridge -->
+<g transform="translate(490 490)" fill="#061624" opacity=".86">
+  <rect x="-300" y="115" width="600" height="26"/>
+  <rect x="-235" y="-40" width="72" height="220"/>
+  <rect x="163" y="-40" width="72" height="220"/>
+  <path d="M-255-40h112l-56-76zM143-40h112l-56-76z"/>
+  <rect x="-220" y="-19" width="42" height="54" fill="#d6d2ca" opacity=".23"/>
+  <rect x="178" y="-19" width="42" height="54" fill="#d6d2ca" opacity=".23"/>
+  <path d="M-199 43 Q0 185 199 43" fill="none" stroke="#061624" stroke-width="15"/>
+  <path d="M-199 46 Q0 -74 199 46" fill="none" stroke="#d8d3c9" stroke-width="5" opacity=".30"/>
+</g>
+
+<!-- City silhouettes -->
+<g fill="#061624" opacity=".82">
+  <rect x="0" y="610" width="185" height="205"/>
+  <rect x="120" y="555" width="95" height="260"/>
+  <rect x="245" y="635" width="130" height="180"/>
+  <rect x="760" y="580" width="120" height="235"/>
+  <path d="M880 815V510l78-110 78 110v305z"/>
+  <rect x="1130" y="655" width="85" height="160"/>
+  <rect x="1465" y="570" width="135" height="245"/>
+</g>
+
+<!-- River -->
+<path d="M0 775 C280 720 530 850 790 790 S1280 720 1600 800V900H0Z" fill="url(#river)" opacity=".95"/>
+<path d="M0 786 C360 752 510 850 840 795 S1290 752 1600 814" fill="none" stroke="#f7f1e8" stroke-width="3" opacity=".12"/>
+
+<!-- London red accent -->
+<path d="M113 720 C370 688 655 749 894 716 S1300 684 1510 727" fill="none" stroke="#c94343" stroke-width="7" opacity=".75"/>
+</svg>
